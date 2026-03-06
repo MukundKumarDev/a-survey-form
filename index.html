@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Only Title
+    </h1>
+    <p id="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ab esse consequatur aliquid quidem ullam dolor repellat, sequi quis tenetur?</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input required id="name" type="text" placeholder="Enter Your name Here">
+      <label id="email-label" for="email">Email</label>
+      <input required id="email" type="email" placeholder="example@email.com">
+      <label id="number-label" for="number">Number</label>
+      <input id="number" type="number" min="10" max="12" placeholder="123456670">
+      <p>Please tell us what's your current role?</p>
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Working professional</option>
+      </select>
+      <p>Can you please tell us what's your gender?</p>
+      <input type="radio" id="male" value="male" name="gender">
+      <caption for="male">Male</caption>
+      <input type="radio" id="female" value="female" name="gender">
+      <caption for="female">Female</caption>
+      <p>Can you please tell us what's your favourite subject?</p>
+      <caption for="science">Science</caption>
+      <input type="checkbox" name="favourite-subject" id="science" value="science">
+      <caption for="arts">Arts</caption>
+      <input type="checkbox" id="arts" value="arts">
+      <caption for="description">Can you please describe yourself?</caption>
+      <textarea id="description">Please describe yourself here...</textarea>
+      <button type="submit" id="submit">Submit</button>
+
+
+    </form>
+  </body>
+</html>
