@@ -1,5 +1,8 @@
 :root{
-    --bg-color: #f8fafc;
+    --background-color: #020403;
+    --card-color: #5F2E1B;
+    --font-color: #1A2324;
+    --accent-color: #141413;
 }
 
 *{
@@ -8,11 +11,13 @@
     padding: 0;
 }
 
-
+h1, p{
+    text-align: center;
+}
 
 body{
     padding: 15px;
-    
+    background-color: var(--background-color);
 }
 
 #survey-form{
@@ -38,9 +43,53 @@ input[type="number"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
-  
+  padding: 9px;
+  margin-bottom: 20px;
   border-radius: 4px;
+ 
+}
+
+
+
+form>p{
+    margin-bottom: 20px;
+}
+
+form p:nth-of-type(2), form p:nth-of-type(3), form p:nth-of-type(4){
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+label[for="male"], label[for="female"]{
+    display: inline;
+    margin-left: 10px;
+}
+
+#female{
+    margin-left: 50%;
+}
+
+label[for="science"], label[for="arts"]{
+    display: inline;
+    margin-right: 10px;
+}
+
+label[for="arts"]{
+    margin-left: 50%;
+    
+}
+
+#submit{
+    width: 50%;
+    padding: 9px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    display: block;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 @media (min-width: 600px){
